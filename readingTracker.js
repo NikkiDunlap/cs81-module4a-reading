@@ -1,3 +1,5 @@
+//GitHub repository URL: https://github.com/NikkiDunlap/cs81-module4a-reviewtracker
+
 // Weekly reading log - stores each day's reading as an object with day, book, and minutes
 const readingLog = 
 [
