@@ -84,13 +84,26 @@ function printDailySummary(log)
   }
 }
 
-// Test case: Add a new Sunday entry
-addReadBook("Sunday", "Kindred", 45); // New data to test the functions
+// Test case 1: Add a new Sunday entry
+addReadBook("Sunday", "Kindred", 45);
 
-// Example usage
+// Test case 2: Add another book to test mostReadBook
+addReadBook("Bonus", "The Alchemist", 20);
+
+// Print the updated summary
 printDailySummary(readingLog);
+
+// Display total minutes read
 console.log("Total minutes read:", totalReadingMinutes(readingLog));
+
+// Display the most read book
 console.log("Most read book:", mostReadBook(readingLog));
 
-// Suggested improvement:
-// Rename `addReadBook` to `addReadingEntry` for clarity.
+/*
+  Suggested Improvement:
+  The function name `addReadBook` could be improved to something more descriptive like `addReadingEntry`.
+
+  Why:
+  "addReadBook" sounds like it's just adding a book title, but the function actually logs a full reading session with day and minutes. 
+  Renaming it makes the purpose of the function clearer, especially in a larger codebase or for new developers reading the code.
+*/
